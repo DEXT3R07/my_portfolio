@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login — Ogbe Dexter Echo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="auth-page">
+    <div class="auth-brand">
+      <div class="auth-brand-mid">
+        <div class="auth-brand-name">Ogbe Dexter Echo<br><span>Portfolio</span></div>
+        <p class="auth-brand-role">Software & brand developer. Sign in to pick up where you left off.</p>
+      </div>
+      <div class="auth-brand-bottom">&copy; 2026 Ogbe Dexter Echo</div>
+    </div>
+
+    <div class="auth-form-side">
+      <div class="auth-card">
+        <h1>Login</h1>
+        <p class="subtitle">Log in to your account</p>
+        <form id="loginForm">
+          <input class="field" type="email" placeholder="Email" required>
+          <input class="field" type="password" placeholder="Password" required>
+          <a href="reset.html" class="forgot">Forgot password?</a>
+          <div class="remember">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+          </div>
+          <input class="submit" type="submit" value="Submit">
+          <p class="switch">Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>
